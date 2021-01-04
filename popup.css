@@ -1,0 +1,103 @@
+html{
+    height: 400px;
+}
+body{
+    margin: 0px;
+    height: 565px;
+    padding: 10px;
+}
+
+.mail {
+    position: relative;
+    width: 250px;
+    height: 450px;
+}
+
+.contents{
+    width: 350px;
+    padding: 30px;
+}
+
+.commands{
+    border: 4px solid #000;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo h3 {
+    text-align: center;
+}
+
+.command {
+    width: 100%;
+    margin-left: 20px;
+    display: inline-flex;
+}
+
+.command .check{
+    margin-top: 15px;
+}
+
+.command p{
+    width: 120px;
+}
+
+.command .text{
+    height: 22px;
+    margin-top: 10px;
+}
+
+.uploads{
+    border: 4px solid #000;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.upload_csv label{
+    margin-bottom: 10px;
+}
+
+.upload_csv input{
+    margin-top: 15px;
+}
+
+.do_run{
+    margin-top: 13px;
+    position: absolute;
+    right: 40px;
+    display: inline-flex;
+}
+
+.do_run button{
+    font-size: 20px;
+}
+
+p#running_email {
+    margin-right: 30px;
+}
+
+button#run{
+    background: #f00;
+    color: white;
+}
+
+button#stop{
+    background: #00f;
+    color: white;
+    margin-right: 10px;
+}
+
+button#run:hover{
+    background: white;
+    color: #f00;
+    font-weight: bold;
+}
+
+button#stop:hover{
+    background: white;
+    color: #00f;
+    font-weight: bold;
+    margin-right: 10px;
+}

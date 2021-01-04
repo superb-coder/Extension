@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="popup.css" />
+        <title>Gmail Operator</title>
+    </head>
+    <body>
+        <div class="contents">
+            <div class="commands">
+                <div class="logo">
+                    <h3>Select Single or Multiple Command</h3>
+                </div>
+                <div class="command">
+                    <input type="checkbox" class="check" id="open_email">
+                    <p>Open Email</p>
+                </div>
+                <div class="command">
+                    <input type="checkbox" class="check" id="click_link">
+                    <p>Click Link</p>
+                    <input type="text" placeholder="Enter Keyword" class="text" id="click_link_keyword">
+                </div>
+                <div class="command">
+                    <input type="checkbox" class="check" id="add_star">
+                    <p>Add Star</p>
+                    <input type="text" placeholder="Enter Keyword" class="text" id="add_star_keyword">
+                </div>
+                <div class="command">
+                    <input type="checkbox" class="check" id="mark_important">
+                    <p>Mark Important</p>
+                    <input type="text" placeholder="Enter Keyword" class="text" id="mark_important_keyword">
+                </div>
+                <div class="command">
+                    <input type="checkbox" class="check" id="add_label">
+                    <p>Add Label</p>
+                    <input type="text" placeholder="Enter Keyword" class="text" id="add_label_keyword">
+                </div>
+                <div class="command">
+                    <input type="checkbox" class="check" id="reply">
+                    <p>Reply</p>
+                    <input type="text" placeholder="Enter Keyword" class="text" id="reply_keyword">
+                </div>
+                <div class="command">
+                    <input type="checkbox" class="check" id="add_contact">
+                    <p>Add Contact</p>
+                    <input type="text" placeholder="Enter Keyword" class="text" id="add_contact_keyword">
+                </div>
+                <div class="command">
+                    <input type="checkbox" class="check" id="archive">
+                    <p>Archive</p>
+                    <input type="text" placeholder="Enter Keyword" class="text" id="archive_keyword">
+                </div>
+            </div>
+            <div class="uploads">
+                <div class="upload_csv">
+                    <label for="files">Upload a CSV formatted file:</label>
+                    <input type="file" id="csv_files"  class="form-control" accept=".csv" required />
+                </div>
+            </div>
+            <div class="do_run">
+                <p id="running_email"></p>
+                <button id="stop">Stop</button>
+                <button id="run">Run</button>
+            </div>        
+        </div>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/papaparse.min.js"></script>
+        <script src="popup.js"></script>
+    </body>
+</html>
